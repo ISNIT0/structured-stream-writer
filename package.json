@@ -1,7 +1,7 @@
 {
   "name": "structured-stream-writer",
   "version": "1.0.0",
-  "description": "",
+  "description": "A utility for stream-writing CSV and JSON files",
   "main": "bin/index.js",
   "scripts": {
     "lint": "./node_modules/.bin/tslint -c tslint.json \"test/**/*.ts\" \"src/**/*.ts\"",
@@ -11,8 +11,8 @@
     "build": "rm -rf bin && tsc --build tsconfig.build.json",
     "start": "node bin/index.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "ISNIT0",
+  "license": "MIT",
   "dependencies": {
     "@types/blue-tape": "^0.1.33",
     "@types/node": "^12.7.12",
