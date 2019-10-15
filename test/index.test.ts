@@ -64,6 +64,6 @@ test('CSV Stream Writer', async (t) => {
     t.equal(data[4], `4,four`, `Last row written correctly`);
 
     await t.throws(() => {
-        new StructuredStreamWriter(StructuredFormat.CSV, outPath);
+        const _keep = new StructuredStreamWriter(StructuredFormat.CSV, outPath);
     }, `Fails to create CSV SSW with no headers`);
 });
